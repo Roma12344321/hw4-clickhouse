@@ -1,0 +1,4 @@
+=== 1.2 контроль на values (исправленный запрос, с условием периода) ===
+country	events_total	events_under_20	under_20_percent
+KZ	2	1	50
+RU	3	1	33.33

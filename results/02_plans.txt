@@ -1,0 +1,45 @@
+=== Q1: Германия, таблица (ended_at) ===
+            ReadFromMergeTree (takt.hw_events_time)
+            Indexes:
+              PrimaryKey
+                Keys:
+                  ended_at
+                Condition: and((ended_at in (-Inf, 1792886399]), (ended_at in [1792800000, +Inf)))
+                Parts: 1/1
+                Granules: 102/1221
+                Search Algorithm: binary search
+
+=== Q2: Германия, таблица (country, ended_at) ===
+            ReadFromMergeTree (takt.hw_events_country)
+            Indexes:
+              PrimaryKey
+                Keys:
+                  country
+                  ended_at
+                Condition: and((country in [\'DE\', \'DE\']), and((ended_at in (-Inf, 1792886399]), (ended_at in [1792800000, +Inf))))
+                Parts: 1/1
+                Granules: 8/1221
+                Search Algorithm: binary search
+
+=== Q3: все страны, таблица (ended_at) ===
+            ReadFromMergeTree (takt.hw_events_time)
+            Indexes:
+              PrimaryKey
+                Keys:
+                  ended_at
+                Condition: and((ended_at in (-Inf, 1792886399]), (ended_at in [1792800000, +Inf)))
+                Parts: 1/1
+                Granules: 102/1221
+                Search Algorithm: binary search
+
+=== Q4: все страны, таблица (country, ended_at) ===
+            ReadFromMergeTree (takt.hw_events_country)
+            Indexes:
+              PrimaryKey
+                Keys:
+                  ended_at
+                Condition: and((ended_at in (-Inf, 1792886399]), (ended_at in [1792800000, +Inf)))
+                Parts: 1/1
+                Granules: 114/1221
+                Search Algorithm: generic exclusion search
+

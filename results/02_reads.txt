@@ -1,0 +1,6 @@
+=== 2.2 показатели чтения измеряемых SELECT (system.query_log, type=QueryFinish, по log_comment) ===
+log_comment	read_rows	read_bytes	query_duration_ms	result_rows
+q1-de-time	835584	14.34 MiB	25	1
+q2-de-country	65536	1.13 MiB	6	1
+q3-all-time	835584	14.34 MiB	18	7
+q4-all-country	931456	15.99 MiB	12	7

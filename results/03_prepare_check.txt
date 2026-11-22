@@ -1,0 +1,8 @@
+=== 3.1 контроль данных ===
+source	rows_count	unique_ids	first_id	last_id	bad_rows
+mixed	500000	500000	0	499999	0
+ordered	500000	500000	0	499999	0
+=== 3.1 контроль частей ===
+table	part_type	active_parts	events
+hw_codec_mixed	Wide	1	500000
+hw_codec_ordered	Wide	1	500000

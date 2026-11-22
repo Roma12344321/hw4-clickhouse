@@ -1,0 +1,12 @@
+=== 4.2 общий контроль - после заполнения истории (ожидается 0 строк) ===
+hour	country	events_diff	short_diff	seconds_diff
+=== 4.3 порция А ===
+=== 4.3 отчёт 27 октября 19:00-21:00 после А ===
+hour	country	events_count	short_count	seconds_sum	under_20_percent	avg_seconds
+2026-10-27 19:00:00	KZ	1	0	25	0	25
+2026-10-27 19:00:00	RU	4	2	84	50	21
+=== 4.2 общий контроль - после А (ожидается 0 строк) ===
+hour	country	events_diff	short_diff	seconds_diff
+=== 4.4 историческая группа RU 24 октября 12:00 - до Б ===
+hour	country	events_count	short_count	seconds_sum	under_20_percent	avg_seconds
+2026-10-24 12:00:00	RU	26478	6655	3659184	25.13	138.2

@@ -1,0 +1,9 @@
+=== 2.1 проверка подготовки: части и события ===
+table	active_parts	events
+hw_events_country	1	10000000
+hw_events_time	1	10000000
+
+=== 2.1 ключи сортировки (system.tables.sorting_key) ===
+name	sorting_key
+hw_events_country	country, ended_at
+hw_events_time	ended_at

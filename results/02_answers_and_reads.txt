@@ -1,0 +1,39 @@
+=== q1-de-time: SELECT FROM takt.hw_events_time ===
+country	events_total	events_under_20	under_20_percent
+DE	59423	14833	24.96
+
+=== q2-de-country: SELECT FROM takt.hw_events_country ===
+country	events_total	events_under_20	under_20_percent
+DE	59423	14833	24.96
+
+=== q3-all-time: SELECT FROM takt.hw_events_time ===
+country	events_total	events_under_20	under_20_percent
+BR	34608	8771	25.34
+BY	66713	16693	25.02
+DE	59423	14833	24.96
+KZ	97107	23856	24.57
+RU	451255	112679	24.97
+TR	66135	16438	24.86
+US	50128	12690	25.32
+
+=== q4-all-country: SELECT FROM takt.hw_events_country ===
+country	events_total	events_under_20	under_20_percent
+BR	34608	8771	25.34
+BY	66713	16693	25.02
+DE	59423	14833	24.96
+KZ	97107	23856	24.57
+RU	451255	112679	24.97
+TR	66135	16438	24.86
+US	50128	12690	25.32
+
+=== ключи сортировки таблиц (system.tables.sorting_key) ===
+name	sorting_key
+hw_events_country	country, ended_at
+hw_events_time	ended_at
+
+=== показатели чтения из system.query_log (type=QueryFinish, по log_comment) ===
+log_comment	read_rows	read_bytes	query_duration_ms	result_rows
+q1-de-time	835584	14.34 MiB	49	1
+q2-de-country	65536	1.13 MiB	5	1
+q3-all-time	835584	14.34 MiB	13	7
+q4-all-country	931456	15.99 MiB	12	7
